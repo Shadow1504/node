@@ -14,6 +14,6 @@ app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use("/",require("./server/routes/router"));
-app.listen("5100",()=>{
+app.listen("10000",()=>{
     console.log("connected");
 })

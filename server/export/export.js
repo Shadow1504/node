@@ -3,7 +3,7 @@ const axios=require('axios');
 
 
 exports.inde=(req,res)=>{
-    axios.get("http://localhost:5100/api/users")
+    axios.get("http://localhost:10000/api/users")
     .then(function(response){
         res.render('index',{users:response.data});
     })

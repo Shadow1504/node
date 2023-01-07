@@ -58,7 +58,7 @@ table ,thead ,th, tbody, tr, td
        $(".del").click(function(){
     let id=$(this).attr("data-id")
     $.ajax({
-        "url":`http://localhost:5100/api/users/${id}`,
+        "url":`http://localhost:10000/api/users/${id}`,
         "method":"DELETE"
     }).done(function(response){
         location.reload();
